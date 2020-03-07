@@ -1,13 +1,29 @@
-# chat-example
+# Live support chat server
 
-This is the source code for a very simple chat example used for
-the [Getting Started](http://socket.io/get-started/chat/) guide
-of the Socket.IO website.
+Node/Express/SocketIO project to provide the back-end for a customer support live chat system.
 
-Please refer to it to learn how to run this application.
+Supports multiple simultaneous customer clients communicating with a single staff client. The staff client can respond to any of the active customer clients.
 
-You can also spin up a free Heroku dyno to test it out:
+# Status
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/socketio/chat-example)
+This project is an early prototype. It is currently lacking auth for the non-public side and persistant storage of all messages.
 
-Besides, the application is deployed on [Now](https://zeit.co/now): https://socketio-chat-example.now.sh/
+There are minimal staff and customer clients are served from `/staff` and `/client` respectively.
+
+# Future plans
+
+This will be incorporated into a staff dashboard behind google gsuite oauth2. The dashboard will also be able to view any previous conversations.
+
+# Install
+
+- `git clone *repo_url*`
+
+- `npm install`
+
+- `npm start`
+
+
+# Inspiration
+
+This code is adapted from the [chat example](http://socket.io/get-started/chat/) from the socket.IO docs.
+
